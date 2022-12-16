@@ -1,5 +1,5 @@
 <template>
-  <v-card class="mt-4 mx-auto text-center hidden-sm-only" min-width="320">
+  <v-card class="mt-4 mx-auto text-center hidden-sm-only zoom1_5" min-width="320">
     <!-- 上部分：标题和LOGO-->
     <v-card-text class="py-0">
       <!-- 标题和LOGO卡片：向上偏移32px -->

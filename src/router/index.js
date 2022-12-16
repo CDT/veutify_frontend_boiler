@@ -79,7 +79,7 @@ router.beforeEach (async (to, from, next) => {
 
   // 有roles，比对一下route的roles是否和user的roles有共同角色，没有则无权访问
   if (roles && roles.length > 0 && 
-      roles.filter(role => user.roles.includes(role)).length == 0) {
+      user.roles && roles.filter(role => user.roles.includes(role)).length == 0) {
       return next({ name: 'Error' })
   }
   

@@ -1,7 +1,6 @@
 import { apiBase, timeout} from '@/config'
 import axios from 'axios'
 import Vue from 'vue'
-import store from '@/store'
 
 const appAxios = axios.create({
   baseURL: apiBase,

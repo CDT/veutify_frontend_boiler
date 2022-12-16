@@ -1,0 +1,9 @@
+.zoom1_5 {
+  zoom: 1.5;
+}
+
+.show-cat {
+  background-image: url('./bg.avif') !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}

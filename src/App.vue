@@ -14,18 +14,28 @@
       <!-- -->
     </v-footer>
 
+    <toast ref="toast" />
+    <confirm ref="confirm" />
+
   </v-app>
 </template>
 
 <script>
 import AppBar from '@/components/AppBar'
 import Sidebar from '@/components/Sidebar/index'
+import Toast from '@/components/Toast'
+import Confirm from '@/components/Confirm'
+import Vue from 'vue'
 
 export default {
   name: 'App',
-  components: { AppBar, Sidebar },
-  data () { 
+  components: { AppBar, Sidebar, Toast, Confirm },
+  data () {
     return {}
   },
+  mounted () {
+    Vue.prototype.$toast = this.$refs.toast.show
+    Vue.prototype.$confirm = this.$refs.confirm.show
+  }
 };
 </script>
